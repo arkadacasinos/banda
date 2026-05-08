@@ -17,7 +17,6 @@
   --bn-px2: 24px;
 }
 
-/* ===== СБРОС ===== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; font-size: 16px; }
 body {
@@ -35,7 +34,6 @@ ul, ol { list-style: none; }
 figure { margin: 0; }
 figcaption { font-size: 0.8rem; color: var(--bn-clr-text2); text-align: center; margin-top: 8px; }
 
-/* ===== ШАПКА ===== */
 .bn_hdr-wrap {
   position: sticky;
   top: 0;
@@ -61,7 +59,6 @@ figcaption { font-size: 0.8rem; color: var(--bn-clr-text2); text-align: center; 
 .bn_hdr-nav a { color: var(--bn-clr-text); font-size: 0.85rem; font-weight: 500; transition: color 0.2s; }
 .bn_hdr-nav a:hover { color: var(--bn-clr-white); }
 
-/* Бургер */
 .bn_hdr-burger {
   display: flex;
   flex-direction: column;
@@ -87,7 +84,6 @@ figcaption { font-size: 0.8rem; color: var(--bn-clr-text2); text-align: center; 
   transform: translateY(-7px) rotate(-45deg);
 }
 
-/* Мобильное меню */
 .bn_hdr-mobile {
   display: none;
   background: var(--bn-clr-surface);
@@ -105,7 +101,6 @@ figcaption { font-size: 0.8rem; color: var(--bn-clr-text2); text-align: center; 
   border-bottom: 1px solid var(--bn-clr-border);
 }
 
-/* ===== ГЕРОЙ ===== */
 .bn_hero-plate {
   background: linear-gradient(165deg, var(--bn-clr-bg) 0%, #0f1a2e 50%, #162035 100%);
   padding: 48px var(--bn-px) 32px;
@@ -177,7 +172,6 @@ figcaption { font-size: 0.8rem; color: var(--bn-clr-text2); text-align: center; 
   border: 1px solid var(--bn-clr-border);
 }
 
-/* ===== ОСНОВНОЙ КОНТЕНТ ===== */
 .bn_main-grid {
   max-width: var(--bn-mx);
   margin: 0 auto;
@@ -226,7 +220,6 @@ figcaption { font-size: 0.8rem; color: var(--bn-clr-text2); text-align: center; 
   border: 1px solid var(--bn-clr-border);
 }
 
-/* ===== КАРТОЧКИ ИГР ===== */
 .bn_games-row {
   display: grid;
   grid-template-columns: 1fr;
@@ -265,7 +258,6 @@ figcaption { font-size: 0.8rem; color: var(--bn-clr-text2); text-align: center; 
   line-height: 1.5;
 }
 
-/* Раскрытые скрытые блоки */
 .bn_cat-revealed {
   display: block !important;
   background: var(--bn-clr-surface2);
@@ -293,7 +285,6 @@ figcaption { font-size: 0.8rem; color: var(--bn-clr-text2); text-align: center; 
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ===== БОНУС-ЛЕНТА ===== */
 .bn_bonus-strip {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -321,7 +312,6 @@ figcaption { font-size: 0.8rem; color: var(--bn-clr-text2); text-align: center; 
   letter-spacing: 0.5px;
 }
 
-/* ===== ТАБЛИЦА ===== */
 .bn_tbl-wrap {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
@@ -366,7 +356,6 @@ figcaption { font-size: 0.8rem; color: var(--bn-clr-text2); text-align: center; 
   font-weight: 600;
 }
 
-/* ===== FAQ ===== */
 .bn_faq-list { margin-top: 16px; }
 .bn_faq-item {
   background: var(--bn-clr-surface);
@@ -413,7 +402,6 @@ figcaption { font-size: 0.8rem; color: var(--bn-clr-text2); text-align: center; 
 }
 .bn_faq-item p strong { color: var(--bn-clr-white); font-weight: 600; }
 
-/* ===== ФУТЕР ===== */
 .bn_ftr-wrap {
   background: var(--bn-clr-surface);
   border-top: 1px solid var(--bn-clr-border);
@@ -449,7 +437,6 @@ figcaption { font-size: 0.8rem; color: var(--bn-clr-text2); text-align: center; 
 }
 .bn_ftr-col ul a:hover { color: var(--bn-clr-white); }
 
-/* Хештеги */
 .bn_hash-cloud { display: flex; flex-wrap: wrap; gap: 8px; }
 .bn_hash-cloud a {
   background: var(--bn-clr-surface2);
@@ -480,7 +467,6 @@ figcaption { font-size: 0.8rem; color: var(--bn-clr-text2); text-align: center; 
   color: var(--bn-clr-text2);
 }
 
-/* ===== АДАПТИВ: ТАБЛЕТ ===== */
 @media (min-width: 600px) {
   .bn_games-row { grid-template-columns: repeat(3, 1fr); }
   .bn_bonus-strip { grid-template-columns: repeat(4, 1fr); }
@@ -489,7 +475,6 @@ figcaption { font-size: 0.8rem; color: var(--bn-clr-text2); text-align: center; 
   .bn_stat-item { padding: 18px 14px; }
 }
 
-/* ===== АДАПТИВ: ДЕСКТОП ===== */
 @media (min-width: 900px) {
   :root { --bn-px: 24px; }
 
@@ -509,18 +494,15 @@ figcaption { font-size: 0.8rem; color: var(--bn-clr-text2); text-align: center; 
   .bn_game-card img { height: 180px; }
 }
 
-/* ===== АДАПТИВ: ШИРОКИЙ ===== */
 @media (min-width: 1200px) {
   :root { --bn-px: 32px; }
   .bn_hero-title { font-size: 2.8rem; }
   .bn_hero-stats { max-width: 500px; }
 }
 
-/* ===== УТИЛИТЫ ===== */
 ::selection { background: var(--bn-clr-accent); color: var(--bn-clr-white); }
 :focus-visible { outline: 2px solid var(--bn-clr-accent); outline-offset: 2px; }
 
-/* Печать */
 @media print {
   .bn_hdr-wrap, .bn_hdr-burger, .bn_hero-visual, .bn_art-figure { display: none; }
   body { background: white; color: black; }
